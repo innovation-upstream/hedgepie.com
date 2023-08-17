@@ -1,54 +1,107 @@
 <section id="about-us">
   <div class="container lg:px-10 mx-auto py-36">
-    <div class="grid grid-cols-2 ">
+    <div class="grid grid-cols-2">
       <div data-aos="fade-right" data-aos-duration="1500">
-        <p  class="text-primary text-base font-bold uppercase ">What’s
-          Hedpepie?</p>
-        <p  class=" text-6xl font-bold	text-fontDark		">
+        <p class="text-primary text-base font-bold uppercase">
+          What’s Hedpepie?
+        </p>
+        <p class="text-6xl font-bold text-fontDark">
           Investing in financial products becomes easier
         </p>
       </div>
-      <div data-aos="fade-left" data-aos-duration="1500" class="flex justify-end items-center">
-        <p data-aos="fade-up" data-aos-duration="1200"  class="w-98  text-xl text-fontColor 	">
-          Hedgepie's primary mission is to dismantle the barriers that independent fund managers face in traditional financial markets, paving the way for a new era of democratized and transparent finance. Simultaneously, we are dedicated to making it effortless for retail DeFi investors to discover, understand the risk/reward dynamics of, and invest in actively managed DeFi portfolios.
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="flex justify-end items-center"
+      >
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="w-98 text-xl text-fontColor"
+        >
+          Hedgepie's primary mission is to dismantle the barriers that
+          independent fund managers face in traditional financial markets,
+          paving the way for a new era of democratized and transparent finance.
+          Simultaneously, we are dedicated to making it effortless for retail
+          DeFi investors to discover, understand the risk/reward dynamics of,
+          and invest in actively managed DeFi portfolios.
         </p>
       </div>
     </div>
-    {{ $about1 := resources.Get "images/About1.svg" }}
-    {{ $about2 := resources.Get "images/About2.svg" }}
-    {{ $about3 := resources.Get "images/About3.svg" }}
+    {{ $about1 := resources.Get "images/About1.svg" }} {{ $about2 :=
+    resources.Get "images/About2.svg" }} {{ $about3 := resources.Get
+    "images/About3.svg" }}
     <div class="grid grid-cols-3 gap-10 pt-28 pb-36">
-      <div data-aos="fade-right" data-aos-duration="1500" class="px-8 py-9 bg-themeWhite rounded-xl">
-        <img src="{{ $about1.Permalink }}">
-        <p class="text-fontDark text-3xl	 font-medium py-6 ">Transparently safe</p>
-        <p class=" text-lg	 	text-fontColor	">
-          Each pool that Hedgepie is integrated with has been manually reviewed and scrutinized by our team at a high level of diligence to ensure that users' funds are always safe. You get transparent access to funds designed by experienced DeFi investors worldwide.
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        class="px-8 py-9 bg-themeWhite rounded-xl"
+      >
+        <img src="{{ $about1.Permalink }}" />
+        <p class="text-fontDark text-3xl font-medium py-6">Curated</p>
+        <p class="text-lg text-fontColor">
+          Each pool that Hedgepie is integrated with has been manually reviewed
+          and scrutinized by our team at a high level of diligence.
         </p>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1500" class="px-8 py-9 bg-themeWhite rounded-xl">
-        <img src="{{ $about2.Permalink }}">
-        <p class="text-fontDark text-3xl	 font-medium py-6 ">Transparently designed & managed DeFi products</p>
-        <p class=" text-lg	 	text-fontColor	">
-          Experts use Hedgepie to design and actively manage funds the same way money managers do in traditional stock markets. Granting you access to their strategies and performance history, we give you the power and freedom to choose which fund to participate in.
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="px-8 py-9 bg-themeWhite rounded-xl"
+      >
+        <img src="{{ $about2.Permalink }}" />
+        <p class="text-fontDark text-3xl font-medium py-6">
+          Transparently designed
+        </p>
+        <p class="text-lg text-fontColor">
+          DeFi Experts use Hedgepie to design and actively manage funds the same
+          way money managers do in traditional stock markets. Experience the
+          power and freedom to access their strategies and performance history
+          with a user friendly interface.
         </p>
       </div>
-      <div data-aos="fade-left" data-aos-duration="1500" class="px-8 py-9 bg-themeWhite rounded-xl">
-        <img src="{{ $about3.Permalink }}">
-        <p class="text-fontDark text-3xl	 font-medium py-6 ">No penalties for opting out any time</p>
-        <p class=" text-lg	 	text-fontColor	">
-          Investing should not be a do-or-die affair. You can cash out from any investment strategy you try at any time, with no withdrawal fees.
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="px-8 py-9 bg-themeWhite rounded-xl"
+      >
+        <img src="{{ $about3.Permalink }}" />
+        <p class="text-fontDark text-3xl font-medium py-6">
+          No penalties when opting out
+        </p>
+        <p class="text-lg text-fontColor">
+          Allocating your funds should not be a do-or-die affair. You can cash
+          out from any curated fund at any time with no withdrawal fees.
         </p>
       </div>
     </div>
     <!-- audit -->
-    {{ $audit1 := resources.Get "images/Audit1.svg" }}
-    {{ $audit2 := resources.Get "images/Audit2.svg" }}
-    {{ $audit3 := resources.Get "images/Audit3.svg" }}
-    <p data-aos="fade-up" data-aos-duration="1200"class="text-primary text-base font-bold uppercase flex justify-center items-center pb-16">we are audited by</p>
-    <div  class="flex justify-around items-center">
-      <img data-aos="fade-right" data-aos-duration="1200" src="{{ $audit1.Permalink }}">
-      <img data-aos="fade-up" data-aos-duration="1500" src="{{ $audit2.Permalink }}" >
-      <img data-aos="fade-left" data-aos-duration="1200" src="{{ $audit3.Permalink }}">
+    {{ $audit1 := resources.Get "images/Audit1.svg" }} {{ $audit2 :=
+    resources.Get "images/Audit2.svg" }} {{ $audit3 := resources.Get
+    "images/Audit3.svg" }}
+    <p
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      class="text-primary text-base font-bold uppercase flex justify-center items-center pb-16"
+    >
+      we are audited by
+    </p>
+    <div class="flex justify-around items-center">
+      <img
+        data-aos="fade-right"
+        data-aos-duration="1200"
+        src="{{ $audit1.Permalink }}"
+      />
+      <img
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        src="{{ $audit2.Permalink }}"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-duration="1200"
+        src="{{ $audit3.Permalink }}"
+      />
     </div>
   </div>
 </section>

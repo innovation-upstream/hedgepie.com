@@ -1,59 +1,105 @@
-
-<section class="bg-themeWhite  " >
-  <div class="lg:container md:container-fluid  lg:mx-auto">
-    <header >
-      <nav  class=" mx-auto flex  items-center justify-between py-6 " aria-label="Global">
+<section class="bg-themeWhite">
+  <div class="lg:container md:container-fluid lg:mx-auto">
+    <header>
+      <nav
+        class="mx-auto flex items-center justify-between py-6"
+        aria-label="Global"
+      >
         <div class="">
           <a href="#" class="">
             <span class="sr-only">Your Company</span>
             {{ $img := resources.Get "images/Logo.svg" }}
-            <img class="w-auto" alt="logo" src="{{ $img.Permalink }}">
+            <img class="w-auto" alt="logo" src="{{ $img.Permalink }}" />
           </a>
         </div>
-        <div class="flex  md:hidden lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <div class="flex md:hidden lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          >
             <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
             </svg>
           </button>
         </div>
-        <div class="hidden  md:flex md:justify-end md:items-center md:gap-x-12">
-          <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#about-us">About Us</a>
-          <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#how-work">How it works</a>
-          <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#ttfs">TTFs</a>
-          <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="https://hedgepie.finance">Join Us</a>
+        <div class="hidden md:flex md:justify-end md:items-center md:gap-x-12">
+          <a
+            class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+            href="#about-us"
+            >About Us</a
+          >
+          <a
+            class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+            href="#how-work"
+            >How it works</a
+          >
+          <a
+            class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+            href="#ttfs"
+            >TTFs</a
+          >
+          <a
+            class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+            href="https://hedgepie.finance"
+            >Join Us</a
+          >
           <!--<a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#faqs">FAQs</a>-->
         </div>
         <div class="flex items-center">
-          <a href="#" class="pr-6 text-base font-semibold leading-6 text-fontDark hover:text-fontColor">EN</a>
+          <a
+            href="#"
+            class="pr-6 text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+            >EN</a
+          >
           <a
             href="https://hedgepie.finance"
-            class=" border-2 rounded-xl	 border-primary text-primary flex justify-center align-center font-semibold	text-xl		py-2.5 px-8">
-          Launch App</a>
+            class="border-2 rounded-xl border-primary text-primary flex justify-center align-center font-semibold text-xl py-2.5 px-8"
+          >
+            Launch App</a
+          >
         </div>
       </nav>
-
     </header>
-    {{ $img := resources.Get "images/Platform.svg" }}      
+    {{ $img := resources.Get "images/Platform.svg" }}
     <div class="grid grid-cols-2 py-28">
       <div data-aos="fade-right" data-aos-duration="1500">
-        <p class=" text-2xl font-bold uppercase flex items-center">The first <span class="ml-4 h-0.5	 bg-primary w-24 block"></span> </p>
-        <p class=" text-6xl font-bold	text-fontDark		">
-          <span class="text-primary ">All-in-one</span> <br> investment platform for decentralized finance
+        <p class="text-2xl font-bold uppercase flex items-center">
+          The first <span class="ml-4 h-0.5 bg-primary w-24 block"></span>
         </p>
-        <p class="py-8  text-xl text-fontColor 	pr-10">
-          Similar to how stock exchanges make it easy to participate in traditional financial products like ETFs, mutual funds, and hedge funds; Hedgepie makes it easy to create and invest in decentralized financial products.
+        <p class="text-6xl font-bold text-fontDark">
+          <span class="text-primary">All-in-one</span> <br />
+          platform making DeFi simpler for everyone.
+        </p>
+        <p class="py-8 text-xl text-fontColor pr-10">
+          DeFi is complicated with more than 17k options and steep learning
+          curves. Millions of users are left out of participating. Hedgepie
+          connects those interested in DeFi opportunities with those supplying
+          DeFi opportunities - making previously fragmented options transparent
+          in one user-friendly platform.
           <a
             href="https://hedgepie.finance"
-            class="mt-6 bg-primary text-white flex justify-center align-center font-semibold	text-xl	rounded-xl	py-2.5 px-8">
-          Launch App</a>
+            class="mt-6 bg-primary text-white flex justify-center align-center font-semibold text-xl rounded-xl py-2.5 px-8"
+          >
+            Launch App</a
+          >
+        </p>
       </div>
 
       <div data-aos="fade-left" data-aos-duration="1500">
-        <img src="{{ $img.Permalink }}">
+        <img src="{{ $img.Permalink }}" />
       </div>
+    </div>
   </div>
-</div>
 </section>
