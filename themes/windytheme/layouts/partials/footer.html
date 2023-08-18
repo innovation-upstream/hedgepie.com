@@ -3,20 +3,38 @@
     <div class="grid grid-cols-2 gap-36">
       <div>
         {{ $img := resources.Get "images/Logo.svg" }}
-        <img class="w-auto" alt="Contact" src="{{ $img.Permalink }}">
-        <p class="w-4/5 text-sm	 text-fontColor  pt-6">HedgePie is a community-driven decentralized network of investors
-          and crypto enthusiasts from all over the world.
+        <img class="w-auto" alt="Contact" src="{{ $img.Permalink }}" />
+        <p class="w-4/5 text-sm text-fontColor pt-6">
+          HedgePie is a community-driven decentralized network of investors and
+          crypto enthusiasts from all over the world.
         </p>
-        <p class="w-4/5 text-sm	 text-fontColor pt-4">Stay on top of the action with the latest news and important
-          announcements on our social media channels.</p>
-        <div class="hidden  md:flex md:justify-start md:items-start md:gap-x-4 mt-6">
-          {{ $Twitterbimg := resources.Get "images/Twitter.svg" }}
-          {{ $Fbimg := resources.Get "images/FB.svg" }}
-          {{ $Inimg := resources.Get "images/LinkedIn.svg" }}
-          {{ $Discordimg := resources.Get "images/Discord.svg" }}
-          {{ $Integartionimg := resources.Get "images/Integration.svg" }}
-          <a href="https://twitter.com/Hedgepiefinance" target="_blank" rel="noopener">
-            <img class="w-auto" alt="logo" src="{{ $Twitterbimg.Permalink }}">
+        <p class="w-4/5 text-sm text-fontColor pt-4">
+          Stay on top of the action with the latest news and important
+          announcements on our social media channels.
+        </p>
+        <p class="w-4/5 text-sm text-fontColor pt-4">
+          Need some information or have a question? Contact us at
+          <a href="mailto:support@hedgepie.finance">support@hedgepie.finance</a>
+          or
+          <a href="mailto:techsupport@hedgepie.finance"
+            >techsupport@hedgepie.finance</a
+          >
+          and our team will be in touch soon.
+        </p>
+        <div
+          class="hidden md:flex md:justify-start md:items-start md:gap-x-4 mt-6"
+        >
+          {{ $Twitterbimg := resources.Get "images/Twitter.svg" }} {{ $Fbimg :=
+          resources.Get "images/FB.svg" }} {{ $Inimg := resources.Get
+          "images/LinkedIn.svg" }} {{ $Discordimg := resources.Get
+          "images/Discord.svg" }} {{ $Integartionimg := resources.Get
+          "images/Integration.svg" }}
+          <a
+            href="https://twitter.com/Hedgepiefinance"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="w-auto" alt="logo" src="{{ $Twitterbimg.Permalink }}" />
           </a>
           <!--<img class="w-auto" alt="logo" src="{{ $Discordimg.Permalink }}">-->
           <!--<img class="w-auto" alt="logo" src="{{ $Fbimg.Permalink }}">-->
@@ -24,71 +42,104 @@
           <!--<img class="w-auto" alt="logo" src="{{ $Integartionimg.Permalink }}">-->
         </div>
       </div>
-      <div class="hidden  md:flex md:justify-start md:items-start md:gap-x-12">
-        <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#about-us">About Us</a>
-        <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#how-work">How it works</a>
-        <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="#ttfs">TTFs</a>
-        <a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor" href="https://hedgepie.finance">Join Us</a>
+      <div class="hidden md:flex md:justify-start md:items-start md:gap-x-12">
+        <a
+          class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+          href="#about-us"
+          >About Us</a
+        >
+        <a
+          class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+          href="#how-work"
+          >How it works</a
+        >
+        <a
+          class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+          href="#ttfs"
+          >TTFs</a
+        >
+        <a
+          class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+          href="https://hedgepie.finance"
+          >Join Us</a
+        >
         <!--<a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor">FAQs</a>-->
       </div>
     </div>
   </div>
 </section>
 <!-- copy right -->
-<div class="hidden  md:flex md:justify-center md:items-start md:gap-x-6 py-6 border-t border-borderColor">
-  <p class="text-sm	text-fontColor">@ 2022 HedgePie, All rights reserved.</p>
-  <p class="text-sm	text-fontColor">Privacy policy</p>
-  <p class="text-sm	text-fontColor">Terms & Conditions</p>
+<div
+  class="hidden md:flex md:justify-center md:items-start md:gap-x-6 py-6 border-t border-borderColor"
+>
+  <p class="text-sm text-fontColor">@ 2022 HedgePie, All rights reserved.</p>
+  <p class="text-sm text-fontColor">Privacy policy</p>
+  <p class="text-sm text-fontColor">Terms & Conditions</p>
 </div>
 <script>
   // data array
   var data = [
     {
-      title: 'What’s Hedgepie?',
-      description: 'Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis'
+      title: "What’s Hedgepie?",
+      description:
+        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis",
     },
     {
-      title: 'Are are funds safe and secured?',
-      description: 'Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis'
+      title: "Are are funds safe and secured?",
+      description:
+        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis",
     },
     {
-      title: 'What can I do on the platform?',
-      description: 'Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis'
+      title: "What can I do on the platform?",
+      description:
+        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis",
     },
     {
-      title: 'Is it suitable for newbies?',
-      description: 'Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis'
+      title: "Is it suitable for newbies?",
+      description:
+        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis",
     },
     {
-      title: 'How long does ot take to withdraw money from the account?',
-      description: 'Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis'
+      title: "How long does ot take to withdraw money from the account?",
+      description:
+        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis",
     },
-  ]
-  $.each( data, function ( index, item ) {
-    var accordionItem = $( '<div>', { class: 'accordion-item mb-12 cursor-pointer' } )
-    var accordionTitle = $( '<div>', { class: 'accordion-title flex justify-between items-center' } )
-    var title = $( '<p>', { class: 'text-3xl text-fontDark', text: item.title } )
-    var toggleBtn = $( '<button>', { class: 'w-6 h-6 bg-primary rounded-full text-white text-xl flex justify-center items-center' } )
-    var plusIcon = $( '<span>', { class: 'plusIcon', text: '+' } )
-    var minusIcon = $( '<span>', { class: 'minusIcon', text: '-' } ).hide()
-    var accordionContent = $( '<div>', { class: 'accordion-content pt-6', text: item.description } ).hide()
+  ];
+  $.each(data, function (index, item) {
+    var accordionItem = $("<div>", {
+      class: "accordion-item mb-12 cursor-pointer",
+    });
+    var accordionTitle = $("<div>", {
+      class: "accordion-title flex justify-between items-center",
+    });
+    var title = $("<p>", { class: "text-3xl text-fontDark", text: item.title });
+    var toggleBtn = $("<button>", {
+      class:
+        "w-6 h-6 bg-primary rounded-full text-white text-xl flex justify-center items-center",
+    });
+    var plusIcon = $("<span>", { class: "plusIcon", text: "+" });
+    var minusIcon = $("<span>", { class: "minusIcon", text: "-" }).hide();
+    var accordionContent = $("<div>", {
+      class: "accordion-content pt-6",
+      text: item.description,
+    }).hide();
 
-    toggleBtn.append( plusIcon, minusIcon )
-    accordionTitle.append( title, toggleBtn )
-    accordionItem.append( accordionTitle, accordionContent )
-    $( '#accordion-container' ).append( accordionItem )
+    toggleBtn.append(plusIcon, minusIcon);
+    accordionTitle.append(title, toggleBtn);
+    accordionItem.append(accordionTitle, accordionContent);
+    $("#accordion-container").append(accordionItem);
 
     // add click event to toggle accordion
-    toggleBtn.click( function () {
-      accordionTitle.toggleClass( 'active' )
-      plusIcon.toggle()
-      minusIcon.toggle()
-      accordionContent.slideToggle()
-    } )
-  } )
+    toggleBtn.click(function () {
+      accordionTitle.toggleClass("active");
+      plusIcon.toggle();
+      minusIcon.toggle();
+      accordionContent.slideToggle();
+    });
+  });
 
-  $( document ).ready( function () {
-    $( '.slider' ).slick( {
+  $(document).ready(function () {
+    $(".slider").slick({
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -100,22 +151,20 @@
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 3
-          }
+            slidesToShow: 3,
+          },
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 2
-          }
-        }
-      ]
-    } )
-  } )
+            slidesToShow: 2,
+          },
+        },
+      ],
+    });
+  });
 
-
-  document.addEventListener( "DOMContentLoaded", function () {
-    AOS.init()
-  } );
-
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+  });
 </script>

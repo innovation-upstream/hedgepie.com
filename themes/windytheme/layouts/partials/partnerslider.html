@@ -1,40 +1,37 @@
-{{ $partnersImg := resources.Get "images/Partners.svg" }}
-{{ $Partner1 := resources.Get "images/Partner1.svg" }}
-{{ $Partner2 := resources.Get "images/Partner2.svg" }}
-{{ $Partner3 := resources.Get "images/Partner3.svg" }}
-{{ $Partner4 := resources.Get "images/Partner4.svg" }}
-{{ $Partner5 := resources.Get "images/Partner5.svg" }}
-{{ $Partner6 := resources.Get "images/Partner6.svg" }}
+{{ $partnersImg := resources.Get "images/Partners.svg" }} {{ $Partner1 :=
+resources.Get "images/Partner1.svg" }} {{ $Partner2 := resources.Get
+"images/Partner2.svg" }} {{ $Partner3 := resources.Get "images/Partner3.svg" }}
+{{ $Partner4 := resources.Get "images/Partner4.svg" }} {{ $Partner5 :=
+resources.Get "images/Partner5.svg" }} {{ $Partner6 := resources.Get
+"images/Partner6.svg" }}
 <div class="slider">
-  
-  
-  <div class="slider-item" >
-    <img src="{{ $Partner1.Permalink }}">
+  <div class="slider-item">
+    <img src="{{ $Partner1.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner6.Permalink }}">
+    <img src="{{ $Partner6.Permalink }}" />
   </div>
-  
+
   <div class="slider-item">
-    <img src="{{ $Partner4.Permalink }}">
-  </div>
-  <div class="slider-item">
-    <img src="{{ $Partner5.Permalink }}">
+    <img src="{{ $Partner4.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner3.Permalink }}">
+    <img src="{{ $Partner5.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner5.Permalink }}">
+    <img src="{{ $Partner3.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner4.Permalink }}">
+    <img src="{{ $Partner5.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner6.Permalink }}">
+    <img src="{{ $Partner4.Permalink }}" />
   </div>
   <div class="slider-item">
-    <img src="{{ $Partner2.Permalink }}">
+    <img src="{{ $Partner6.Permalink }}" />
+  </div>
+  <div class="slider-item">
+    <img src="{{ $Partner2.Permalink }}" />
   </div>
   <!-- Add more slider items as needed -->
 </div>

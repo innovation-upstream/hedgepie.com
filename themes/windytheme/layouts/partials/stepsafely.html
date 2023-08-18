@@ -1,21 +1,27 @@
 <!-- <section class="bg-secondary"> -->
-  <div class="bg-secondary container  mx-auto rounded-xl">
-    <div class="flex justify-between items-end">
-      <div data-aos="fade-right" data-aos-duration="1500" class="pt-16 pl-20 pb-20 w-4/6">
-        <p class=" text-6xl font-semibold	text-white		pb-8 ">
-          Step safely into DeFi with HedgePie
-        </p>
-        <a
-          href="https://hedgepie.finance"
-            class="mt-4 bg-primary text-white flex justify-center align-center font-semibold	text-xl	rounded-xl	py-2.5 px-8">
-            Launch App</a>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="1200" class="w-5/12">
-        {{ $lockImg := resources.Get "images/lock.svg" }}
-        <div class="flex justify-end items-center">
-          <img class="pl-20" src="{{ $lockImg.Permalink }}">
-        </div>
+<div class="bg-secondary container mx-auto rounded-xl">
+  <div class="flex justify-between items-end">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      class="pt-16 pl-20 pb-20 w-4/6"
+    >
+      <p class="text-6xl font-semibold text-white pb-8">
+        Step safely into DeFi with HedgePie
+      </p>
+      <a
+        href="https://hedgepie.finance"
+        class="mt-4 bg-primary text-white flex justify-center align-center font-semibold text-xl rounded-xl py-2.5 px-8"
+      >
+        Launch App</a
+      >
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1200" class="w-5/12">
+      {{ $lockImg := resources.Get "images/lock.svg" }}
+      <div class="flex justify-end items-center">
+        <img class="pl-20" src="{{ $lockImg.Permalink }}" />
       </div>
     </div>
   </div>
-  <!-- </section> -->
+</div>
+<!-- </section> -->
