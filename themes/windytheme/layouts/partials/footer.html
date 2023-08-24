@@ -68,6 +68,12 @@
           href="https://innovationupstream.gitbook.io/hedgepie-doc/"
           >Docs</a
         >
+        <a
+          class="text-base font-semibold leading-6 text-fontDark hover:text-fontColor"
+          href="https://zealy.io/c/hedgepiefinance/questboard/"
+          target="_blank"
+          >Airdrop</a
+        >
         <!--<a class=" text-base font-semibold leading-6 text-fontDark hover:text-fontColor">FAQs</a>-->
       </div>
     </div>
@@ -173,6 +179,14 @@
 
     // add click event to toggle accordion
     toggleBtn.click(function () {
+      accordionTitle.toggleClass("active");
+      plusIcon.toggle();
+      minusIcon.toggle();
+      accordionContent.slideToggle();
+    });
+
+    // add click event to toggle accordion
+    accordionItem.click(function () {
       accordionTitle.toggleClass("active");
       plusIcon.toggle();
       minusIcon.toggle();
