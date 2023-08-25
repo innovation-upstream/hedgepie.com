@@ -106,6 +106,59 @@
             Launch App</a
           >
         </p>
+        <div
+          class="hidden md:flex md:justify-start md:items-start md:gap-x-4 mt-6"
+        >
+          {{ $Twitterbimg := resources.Get "images/Twitter.svg" }} {{ $Fbimg :=
+          resources.Get "images/FB.svg" }} {{ $Inimg := resources.Get
+          "images/LinkedIn.svg" }} {{ $Discordimg := resources.Get
+          "images/Discord.svg" }} {{ $Integartionimg := resources.Get
+          "images/Integration.svg" }} {{ $Telegramimg := resources.Get
+          "images/Telegram.png" }} {{ $Mailimg := resources.Get
+          "images/Mail.jpg" }}
+          <a
+            href="https://twitter.com/Hedgepiefinance"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="w-auto" alt="logo" src="{{ $Twitterbimg.Permalink }}" />
+          </a>
+          <a
+            href="https://discord.gg/FBjcsWDYQv"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="w-auto" alt="logo" src="{{ $Discordimg.Permalink }}" />
+          </a>
+          <a
+            href="https://t.me/HedgePie_Finance"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="w-auto"
+              alt="logo"
+              src="{{ $Telegramimg.Permalink }}"
+              style="width: 40px"
+            />
+          </a>
+          <a
+            href="mailto:support@hedgepie.finance"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="w-auto"
+              alt="logo"
+              src="{{ $Mailimg.Permalink }}"
+              style="width: 40px"
+            />
+          </a>
+          <!--<img class="w-auto" alt="logo" src="{{ $Discordimg.Permalink }}">-->
+          <!--<img class="w-auto" alt="logo" src="{{ $Fbimg.Permalink }}">-->
+          <!--<img class="w-auto" alt="logo" src="{{ $Inimg.Permalink }}">-->
+          <!--<img class="w-auto" alt="logo" src="{{ $Integartionimg.Permalink }}">-->
+        </div>
       </div>
 
       <div data-aos="fade-left" data-aos-duration="1500">
