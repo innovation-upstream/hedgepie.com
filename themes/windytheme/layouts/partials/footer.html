@@ -30,7 +30,8 @@
           "images/Discord.svg" }} {{ $Integartionimg := resources.Get
           "images/Integration.svg" }} {{ $Telegramimg := resources.Get
           "images/Telegram.png" }} {{ $Mailimg := resources.Get
-          "images/Mail.jpg" }}
+          "images/Mail.jpg" }} {{ $Mediumimg := resources.Get
+          "images/medium.png" }}
           <a
             href="https://twitter.com/Hedgepiefinance"
             target="_blank"
@@ -66,6 +67,18 @@
               class="w-auto"
               alt="logo"
               src="{{ $Mailimg.Permalink }}"
+              style="width: 40px"
+            />
+          </a>
+          <a
+            href="https://hedgepiefinance.medium.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="w-auto"
+              alt="logo"
+              src="{{ $Mediumimg.Permalink }}"
               style="width: 40px"
             />
           </a>
